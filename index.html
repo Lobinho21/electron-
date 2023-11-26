@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="refs/Electron.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Electron+</title>
+</head>
+<style>
+    /* Estilo para o corpo da página */
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('refs/print.png'); /* Substitua pelo caminho da sua imagem de fundo */
+        background-size: cover;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Estilo para o botão de download */
+    .download-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        background-color: #0074D9; /* Azul */
+        color: #fff; /* Texto branco */
+        padding: 10px 50px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Estilo para o link de download (opcional) */
+    .download-link {
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
+<body>
+    <div class="support-button">
+        <button class="support-button-icon" id="open-chat">?</button>
+    </div>
+    <button class="download-button">
+        <a href="refs/ElectronInstaller.exe" target="_blank" class="download-link" style="border-radius:10px;" download>Download Test Version</a>
+    </button>
+    <div class="creditos">
+        ©2023 Electron. Todos os direitos reservados por: <a href=https://www.youtube.com/@drillzup>DrillzUp</a>.
+    </div>
+    <div class="discord">
+        <a href="https://discord.gg/Mp8a8vTCa4" target="_blank">
+           <img src="refs/discord.png" width="80" alt="Buy Now" title="Buy Now" />
+        </a>
+    </div>
+</body>
+</html>
+<script>
+    // Captura o botão pelo ID
+    const chatButton = document.getElementById('open-chat');
+
+    // Adiciona um ouvinte de evento para o clique no botão
+    chatButton.addEventListener('click', function() {
+        // Aqui você pode definir a ação que deseja executar
+        // Por exemplo, abrir um pop-up de chat ou redirecionar para uma página de suporte
+        // Vou mostrar um alerta simples como exemplo:
+        alert('This site is only for the trial version of Electron Plus'); // Substitua por sua ação real
+    });
+</script>
